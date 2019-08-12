@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
         this.word = response;
         this.positions = Array(this.word.length).fill(0).map((x, i) => i);
         this.word.word = [];
-        this.word.wrongLetters = new Set<string>();
+        this.word.wrongLetters = [];
       });
 
       this.service.isGameOver()
