@@ -11,12 +11,12 @@
   <div class="row pt-5">
     <!-- <div class="col"> -->
       <div class="wrapper mx-auto">
-        <div *ngIf="word.wrongLetters.length > 0" class="head"></div>
-        <div *ngIf="word.wrongLetters.length > 1" class="torso"></div>
-        <div *ngIf="word.wrongLetters.length > 2" class="leftarm"></div>
-        <div *ngIf="word.wrongLetters.length > 3" class="rightarm"></div>
-        <div *ngIf="word.wrongLetters.length > 4" class="leftleg"></div>
-        <div *ngIf="word.wrongLetters.length > 4" class="leftfoot"></div>
+        <div *ngIf="word.wrongLetters.size() > 0" class="head"></div>
+        <div *ngIf="word.wrongLetters.size() > 1" class="torso"></div>
+        <div *ngIf="word.wrongLetters.size() > 2" class="leftarm"></div>
+        <div *ngIf="word.wrongLetters.size() > 3" class="rightarm"></div>
+        <div *ngIf="word.wrongLetters.size() > 4" class="leftleg"></div>
+        <div *ngIf="word.wrongLetters.size() > 4" class="leftfoot"></div>
         <div *ngIf="gameOver" class="rightleg"></div>
         <div *ngIf="gameOver" class="rightfoot"></div>
         <div class="img-wrapper">
